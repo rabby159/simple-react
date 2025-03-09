@@ -59,12 +59,25 @@
 
 // --------------------------------------------------------------------------------
 
-// conditional rendering 4: && Logical Operator
+// conditional rendering 4: && (true) Logical Operator
+// export default function Todo({ topic, isCompleted }) {
+//   return (
+//     <div>
+//       <li>
+//         {topic} {isCompleted && "Yah hoo!"}
+//       </li>
+//     </div>
+//   );
+// }
+
+// --------------------------------------------------------------------------------
+
+// conditional rendering 5: ||(false) Logical Operator
 export default function Todo({ topic, isCompleted }) {
   return (
     <div>
       <li>
-        {topic} {isCompleted && "Yah hoo!"} 
+        {topic} {isCompleted || "blaaaah!"}
       </li>
     </div>
   );
