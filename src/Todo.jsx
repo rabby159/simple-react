@@ -29,17 +29,30 @@
 // --------------------------------------------------------------------------------
 
 // conditional rendering 2
+// export default function Todo({ topic, isCompleted }) {
+//   if (isCompleted) {
+//     return (
+//       <div>
+//         <li>Complete: {topic}</li>
+//       </div>
+//     );
+//   }
+//   return (
+//     <div>
+//       <li>Still Working: {topic}</li>
+//     </div>
+//   );
+// }
+
+// --------------------------------------------------------------------------------
+
+// conditional rendering 3
 export default function Todo({ topic, isCompleted }) {
-  if (isCompleted) {
-    return (
-      <div>
-        <li>Complete: {topic}</li>
-      </div>
-    );
-  }
   return (
     <div>
-      <li>Still Working: {topic}</li>
+      <li>
+        {isCompleted ? "Complete" : "Still Working"}: {topic}
+      </li>
     </div>
   );
 }
