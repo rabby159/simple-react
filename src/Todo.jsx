@@ -9,7 +9,7 @@
 
 // ------------------------------------------------------------------------
 
-// conditional rendering 1
+// conditional rendering 1: if else
 // export default function Todo({ topic, isCompleted }) {
 //   if (isCompleted) {
 //     return (
@@ -28,7 +28,7 @@
 
 // --------------------------------------------------------------------------------
 
-// conditional rendering 2
+// conditional rendering 2: if
 // export default function Todo({ topic, isCompleted }) {
 //   if (isCompleted) {
 //     return (
@@ -46,12 +46,25 @@
 
 // --------------------------------------------------------------------------------
 
-// conditional rendering 3
+// conditional rendering 3: ternary operator
+// export default function Todo({ topic, isCompleted }) {
+//   return (
+//     <div>
+//       <li>
+//         {isCompleted ? "Complete" : "Still Working"}: {topic}
+//       </li>
+//     </div>
+//   );
+// }
+
+// --------------------------------------------------------------------------------
+
+// conditional rendering 4: && Logical Operator
 export default function Todo({ topic, isCompleted }) {
   return (
     <div>
       <li>
-        {isCompleted ? "Complete" : "Still Working"}: {topic}
+        {topic} {isCompleted && "Yah hoo!"} 
       </li>
     </div>
   );
