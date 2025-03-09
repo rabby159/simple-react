@@ -1,31 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-       
-      </div>
-      
+      <MySpeed name="Suzuki" tspeed="120" cc="150"></MySpeed>
+      <MySpeed name="Yamaha" tspeed="130" cc="155"></MySpeed>
+      <MySpeed name="Hero" tspeed="110" cc="125"></MySpeed>
     </>
-  )
+  );
 }
 
-export default App
+function MySpeed({ name, tspeed, cc }) {
+  // console.log(name, tspeed, cc);
+  return (
+    <div>
+      <h3>Name: {name}</h3>
+      <p>Top Speed: {tspeed}</p>
+      <p>CC: {cc}</p>
+    </div>
+  );
+}
+
+export default App;
