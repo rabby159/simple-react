@@ -10,7 +10,7 @@ function App() {
       <MySpeed name="Hero" tspeed="110" cc="125"></MySpeed>
       <Todo topic='Learn React' isCompleted={true}></Todo>
       <Todo topic='Learn Node' isCompleted={false}></Todo>
-      <Todo topic='Learn MongoDB' isCompleted={true}></Todo>
+      <Todo topic='Learn MongoDB' isCompleted={false}></Todo>
     </>
   );
 }

@@ -7,8 +7,28 @@
 //     )
 // }
 
+// ------------------------------------------------------------------------
 
-// conditional rendering
+// conditional rendering 1
+// export default function Todo({ topic, isCompleted }) {
+//   if (isCompleted) {
+//     return (
+//       <div>
+//         <li>Complete: {topic}</li>
+//       </div>
+//     );
+//   } else {
+//     return (
+//       <div>
+//         <li>Still Working: {topic}</li>
+//       </div>
+//     );
+//   }
+// }
+
+// --------------------------------------------------------------------------------
+
+// conditional rendering 2
 export default function Todo({ topic, isCompleted }) {
   if (isCompleted) {
     return (
@@ -16,11 +36,10 @@ export default function Todo({ topic, isCompleted }) {
         <li>Complete: {topic}</li>
       </div>
     );
-  } else {
-    return (
-      <div>
-        <li>Still Working: {topic}</li>
-      </div>
-    );
   }
+  return (
+    <div>
+      <li>Still Working: {topic}</li>
+    </div>
+  );
 }
