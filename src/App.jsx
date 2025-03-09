@@ -1,4 +1,5 @@
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <MySpeed name="Suzuki" tspeed="120" cc="150"></MySpeed>
       <MySpeed name="Yamaha" tspeed="130" cc="155"></MySpeed>
       <MySpeed name="Hero" tspeed="110" cc="125"></MySpeed>
+      <Todo topic='Learn React' isCompleted={true}></Todo>
+      <Todo topic='Learn Node' isCompleted={false}></Todo>
+      <Todo topic='Learn MongoDB' isCompleted={true}></Todo>
     </>
   );
 }
