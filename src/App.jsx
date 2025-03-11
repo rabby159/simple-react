@@ -2,6 +2,7 @@ import "./App.css";
 import Counter from "./counter";
 import Map from "./map";
 import Todo from "./Todo";
+import User from "./user";
 
 function App() {
   // const bikes = ["Suzuki", "Yamaha", "Hero", "Honda"];
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <User></User>
       <Counter></Counter>
       <MySpeed name="Suzuki" tspeed="120" cc="150"></MySpeed>
       <MySpeed name="Yamaha" tspeed="130" cc="155"></MySpeed>
