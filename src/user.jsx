@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Userr from "./userr";
 
 export default function User() {
 
@@ -12,7 +13,12 @@ export default function User() {
 
     return (
         <>
-            <h3>Total Users: { users.length}</h3>
+            <h3>Total Users: {users.length}</h3>
+            
+            {
+                users.map(userr => <Userr userr={userr}></Userr>)
+            }
         </>
     )
+
 }
